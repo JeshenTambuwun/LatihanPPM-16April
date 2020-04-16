@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular';
+  name = 'JESHEN OKTAVIAN NATHANEL';
+
+
+  hasil = 0;
+
+  a = 0;
+  b = 0;
+
+  pangkat(a, b){
+    this.hasil = Math.pow(a,b);
+    return this.hasil;
+  }
+
+
 }
