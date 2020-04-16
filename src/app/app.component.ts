@@ -11,8 +11,6 @@ export class AppComponent  {
 
   hasil = 0;
 
-  a = 0;
-  b = 0;
 
   pangkat(a, b){
     this.hasil = Math.pow(a,b);

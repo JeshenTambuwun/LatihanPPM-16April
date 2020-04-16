@@ -1,9 +1,8 @@
 <hello name="{{ name }}"></hello>
 <p>
-<input [(ngModel)]="a" type="text"> ^
-<input [(ngModel)]="b" type="text"> =
+<input [(ngModel)]="a" type="number"> ^
+<input [(ngModel)]="b" type="number"> =
 </p>
-
 
 
 <p >
@@ -13,6 +12,17 @@
 
 <ng-template
   *ngIf = "hasil%2==0; then genap; else ganjil">
+
 </ng-template>
 
+<ng-template #genap>
+  <p>POLA B</p>
+  {{hasilGenap}}
+  
+</ng-template>
+
+<ng-template #ganjil>
+  <p>POLA A</p>
+
+</ng-template>
 
